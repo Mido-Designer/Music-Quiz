@@ -2,10 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Music Quiz</title>
 
     <!-- fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 
     <!-- styles -->
     <link rel="stylesheet" href="css/master.css">
@@ -19,8 +24,8 @@
       <div class="nav-container">
         <nav>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Quiz</a></li>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Quizes</a></li>
             <li><a href="">Account</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
@@ -29,18 +34,50 @@
       </div>
     </header>
 
+    <section id="q-sec">
+      <h2>what is the song name</h2>
+    </section>
+
     <section id="player-sec">
       <div class="player">
-
+        <audio controls>
+          <source src="test.mp3">
+        </audio>
       </div>
     </section>
 
-    <section id="choose-sec">
-
+    <section id="choices-sec">
+      <div class="choices">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="choice" id="ch1">ch1</div>
+            </div>
+            <div class="col-sm-6">
+              <div class="choice" id="ch2">ch2</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="choice" id="ch3">ch3</div>
+            </div>
+            <div class="col-sm-6">
+              <div class="choice" id="ch4">ch4</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="ft">
-
+      <div class="socials">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fas fa-phone-square"></i></a>
+      </div>
+      <div class="copyrights">
+        &copy; CopyRights received 2018
+      </div>
     </footer>
 
   </body>
